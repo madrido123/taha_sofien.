@@ -16,6 +16,7 @@ Ce projet illustre la combinaison entre intelligence artificielle, traitement du
 ## Installation
 
 ### 1. Cloner le dépôt 
+https://github.com/madrido123/taha_sofien./tree/main
 
 ### 2. Installation des dépendances
 cd projet
