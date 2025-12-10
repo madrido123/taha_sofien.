@@ -1,41 +1,47 @@
-# Gestionnaire de Stock Adidas  
+# Chatbot Émotionnel – Tkinter  
 
 **Version 1.0.0** 
 
 ## À propos de ce projet
 
-Ce projet est une application web développée avec Node.js et MongoDB, destinée à gérer efficacement les stocks, fournisseurs, catégories et mouvements de stock. Elle propose une interface conviviale, une authentification sécurisée et un suivi en temps réel, afin de simplifier et optimiser la gestion des stocks dans les magasins Adidas.  
+Ce projet est une application Python dotée d’une interface graphique Tkinter, conçue pour simuler un chatbot émotionnel intelligent.
+Le programme analyse les messages de l’utilisateur, détecte l’émotion dominante (joie, tristesse, colère, peur, amour, etc.) et répond de manière adaptée, en affichant des émoticônes et des couleurs thématiques.
+
+Le chatbot peut fonctionner avec ou sans modèle d’apprentissage automatique.
+
+Si TensorFlow et HuggingFace Datasets sont installés, il utilise un modèle LSTM bidirectionnel pour reconnaître les émotions.
+Sinon, il s’appuie sur un système de règles et de réponses prédéfinies stockées dans un fichier JSON.
+Ce projet illustre la combinaison entre intelligence artificielle, traitement du langage naturel (NLP) et interface utilisateur interactive.
 
 ## Installation
 
 ### 1. Cloner le dépôt 
 
-```bash
-git clone https://github.com/madrido123/tahasofiennsrinne-project.git
-```
 ### 2. Installation des dépendances
-Sous le dossier `backend`
-```bash
-npm install  
-```
+cd projet
+### 3. Vérifier la présence des fichiers nécessaires
+Assurez-vous que les fichiers suivants sont dans le même dossier :
 
-### 3. Connexion à MongoDB  
-Sous le dossier `backend`, il faut créer le fichier `.env` et mettre la valeur :
-```bash
-MONGO_URI = mongodb+srv://[USER]:[PASSWORD]@ac-9bpavr9.mongodb.net/[DATABASE]?retryWrites=true&w=majority
-```
+chatbot_gui.py
+reponse.json
+memory.json (optionnel)
 
 ### 4. Démarrage du serveur
-Sous le dossier `backend`
-```bash
-node server.js 
-```
+Installez les bibliothèques Python requises :
 
+pip install tensorflow numpy datasets tkinter
 
-### 5. Accéder à l'interface
-[http://localhost:3000/index.html](http://localhost:3000/index.html)
+### 5. Lancer l’application
+Exécutez le script principal :
 
+python chatbot_gui.py
 
+### 6. Utilisation
+Une fenêtre Tkinter s’ouvre :
+
+Saisissez un message dans le champ de texte.
+Le chatbot analysera votre message et répondra avec une émotion détectée.
+Les couleurs et emojis changent selon l’émotion (joie 😄, tristesse 😢, colère 😡, etc.).
 
   
 
